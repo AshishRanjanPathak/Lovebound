@@ -1,0 +1,72 @@
+import { InventoryItem } from '../types/inventory';
+
+export const INITIAL_INVENTORY_ITEMS: InventoryItem[] = [
+  {
+    id: 'staff-of-love',
+    name: 'Staff of Blossoming Love',
+    category: 'weapon',
+    rarity: 'rare',
+    description: 'A magical heirloom staff imbued with pure empathetic love magic.',
+    lore: 'Forged in the heart of the Celestial Conservatory, it radiates warmth whenever Elinore is near.',
+    quantity: 1,
+    maxStack: 1,
+    isEquipped: true,
+    stats: {
+      attackBonus: 15,
+      magicBonus: 25,
+      dominanceChargeBonus: 10,
+    },
+  },
+  {
+    id: 'void-rod-dominance',
+    name: 'Rod of Violet Dominance',
+    category: 'weapon',
+    rarity: 'epic',
+    description: 'An ancient relic that awakens when righteous fury overcomes restraint.',
+    lore: 'When villains threaten to tear love apart, the staff transforms into a conduit of absolute command.',
+    quantity: 1,
+    maxStack: 1,
+    isEquipped: false,
+    stats: {
+      attackBonus: 45,
+      magicBonus: 10,
+      dominanceChargeBonus: 30,
+    },
+  },
+  {
+    id: 'heart-potion-sm',
+    name: 'Tears of the Forest Nymph',
+    category: 'potion',
+    rarity: 'common',
+    description: 'Restores 40 Health Points and soothes mental fatigue.',
+    lore: 'Bottled morning dew collected beneath the sacred blossom trees.',
+    quantity: 3,
+    maxStack: 10,
+    stats: {
+      hpRestore: 40,
+    },
+  },
+  {
+    id: 'princess-ribbon',
+    name: 'Princess Elinore’s Silk Ribbon',
+    category: 'collectible',
+    rarity: 'rare',
+    description: 'A delicate pink and gold ribbon scented with lavender.',
+    lore: 'Tied around your wrist during the coronation eve. Holding it bolsters your will to protect her.',
+    quantity: 1,
+    maxStack: 1,
+    stats: {
+      magicBonus: 5,
+    },
+  },
+  {
+    id: 'crystal-dominance-shard',
+    name: 'Violet Dominance Shard',
+    category: 'upgrade',
+    rarity: 'epic',
+    description: 'Increases ultimate transformation duration by 2 seconds.',
+    lore: 'A crystallised tear of celestial wrath.',
+    quantity: 2,
+    maxStack: 5,
+  },
+];
